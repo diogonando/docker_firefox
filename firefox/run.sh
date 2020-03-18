@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #Obtem IP para cadastrar no xhosts
 IP=`ifconfig -a | grep -A 3 en0: | tail -1 | awk '{print $2}'`
 #garante que DISPLAY esta local
